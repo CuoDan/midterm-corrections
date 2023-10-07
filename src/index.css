@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.image{
+    text-align: center;
+    width: 72;
+}
+
+.text{
+    text-align: center;
+    color: orange;
+}
