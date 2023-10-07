@@ -12,3 +12,11 @@ it('App contains text "hello world"', () => {
 
   expect(queryByText(/hello world/i)).toBeTruthy();
 });
+
+it('App contains text "I dunno what to say"', () => {
+  const { queryByText } = render(
+    <App />
+  );
+
+  expect(queryByText(/I dunno what to say/i)).toBeTruthy();
+});
