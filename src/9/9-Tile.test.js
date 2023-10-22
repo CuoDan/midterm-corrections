@@ -1,5 +1,5 @@
 import { cleanup, render } from "@testing-library/react";
-import { Tile } from "./8-Tile";
+import { Tile } from "../8/8-Tile";
 
 //Answers:
 
