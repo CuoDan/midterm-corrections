@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*Answer: Option 3*/
+/*my brain lagged for this question, I knew this was supposed to be the right answer...*/
+/*the standard layout would be for mobile:*/
+.featured-tiles{
+    display: flex; 
+    flex-direction: column;
+}
+/*if the screen size is greater than 768px then change the layout to suit the big screen*/
+@media screen and (min-width: 768px) {
+    .featured-tiles {
+        flex-direction: row;
+    }
+}

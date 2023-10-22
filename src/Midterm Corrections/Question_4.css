@@ -1,0 +1,14 @@
+/* Answer: option 3 */
+
+.current > div {
+    font-weight: 900;
+}
+
+/* an <li> with class "current" */
+li.current {
+    font-weight: 900;
+}
+
+.done-tasks li {
+    text-decoration: line-through;
+}
