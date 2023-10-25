@@ -1,12 +1,12 @@
 import { cleanup, render } from "@testing-library/react";
-import { Tile } from "../8/8-Tile";
+import { Tile } from "./8-Tile";
 
 //Answers:
 
 //Option 1
 it("renders without error", () => {
     //Arange
-    const content = [{ title: "test"}];
+    const content = { title: "test"};
 
     //Act
     render(<Tile content={content} />);
@@ -15,7 +15,7 @@ it("renders without error", () => {
 //Option 3
 it("should display image when image value is provided", () => {
     //Arange
-    const content = [{ title: "test", image: "test-image.jpeg"}];
+    const content = { title: "test", image: "test-image.jpeg"};
 
     //Act
     const { queryByRole } = render(<Tile content={content} />);
@@ -28,7 +28,7 @@ it("should display image when image value is provided", () => {
 //Option 5 (I think option 5 is wrong...)
 it("should NOT display image when image value is missing", () => {
     //Arange
-    const content = [{ title: "test", image: ""}];
+    const content = { title: "test", image: ""};
 
     //Act
     const { queryByRole } = render(<Tile content={content} />);
